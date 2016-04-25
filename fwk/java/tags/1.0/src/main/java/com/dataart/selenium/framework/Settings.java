@@ -90,8 +90,10 @@ public class Settings {
             case FIREFOX:
                 return new FirefoxDriver();
             case IE:
+            	System.setProperty("webdriver.ie.driver","src/test/resources/IEDriverServer.exe");
                 return new InternetExplorerDriver();
             case GC:
+            	System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
                 return new ChromeDriver();
             case OPERA:
                 return new OperaDriver();
@@ -104,6 +106,10 @@ public class Settings {
 
     public String getBaseUrl() {
         return baseUrl;
+    }
+    
+    public String getRegistrationUrl() { // my method
+        return "http://localhost:8080/register";
     }
 
     public BrowserType getBrowser() {

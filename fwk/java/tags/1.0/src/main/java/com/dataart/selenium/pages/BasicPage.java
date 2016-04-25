@@ -10,8 +10,8 @@ public class BasicPage extends BasePage {
     public final static By logoutBy = By.xpath("//a[contains(text(), 'Logout')]");
     public final static By flash = By.xpath("//p[@class='flash']");
 
-    public LoginPage forceLogout() {
-        driver.get(settings.getBaseUrl());
+    public LoginPage forceLogout() { // here is logout in any case
+        driver.get(settings.getBaseUrl()); 
         if (isElementPresent(logoutBy)) {
             driver.findElement(logoutBy).click();
         }
@@ -24,4 +24,9 @@ public class BasicPage extends BasePage {
         }
         return null;
     }
+     public RegistrationPage reloadRegistrationPage(){ // my method
+    	 driver.get(settings.getRegistrationUrl());
+    	 return initPage(RegistrationPage.class);  	 
+     }
+    
 }

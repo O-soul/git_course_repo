@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23" started-at="2016-04-22T13:35:36Z" finished-at="2016-04-22T13:35:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23" started-at="2016-04-22T13:35:36Z" finished-at="2016-04-22T13:35:36Z">
+      <class name="com.dataart.selenium.tests.LoginTest">
+        <test-method status="FAIL" signature="beforeSuite()[pri:0, instance:com.dataart.selenium.tests.LoginTest@4501b7af]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2016-04-22T16:34:29Z" finished-at="2016-04-22T16:34:29Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+de.com":{"d":"C:\\Users\\OIGNAT~1\\AppData\\Local\\Temp\\anonymous2407978303352559212webdriver-profile\\extensions\\fxdriver@googlecode.com","e":false,"v":"2.25.0","st":1461332089045,"mt":1461332088757}},"app-system-defaults":{"loop@mozilla.org":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\loop@mozilla.org.xpi","e":true,"v":"1.1.14","st":1460086236000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","e":true,"v":"45.0.2","st":1460086235000}}}
+1461332091626	addons.xpi	DEBUG	No changes found
+1461332091631	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1461332091632	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1461332091644	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1461332091656	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\OIGNAT~1\AppData\Local\Temp\anonymous2407978303352559212webdriver-profile\extensions.json
+1461332091663	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1461332091663	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1461332091663	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1461332091676	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1461332091676	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1461332091676	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1461332091676	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1461332091676	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1461332091677	addons.manager	DEBUG	Starting provider: GMPProvider
+1461332091681	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1461332091681	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1461332091682	addons.manager	DEBUG	Starting provider: PluginProvider
+1461332091682	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1461332091682	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1461332091682	addons.manager	DEBUG	Completed startup sequence
+1461332091856	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1461332091856	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1461332091857	addons.xpi-utils	DEBUG	Successfully read XPI database
+*** Blocklist::_handleCertItemNode: Error adding revoked cert by Issuer and Serial[Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsICertBlocklist.revokeCertByIssuerAndSerial]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/components/nsBlocklistService.js :: Blocklist.prototype._handleCertItemNode :: line 958"  data: no]
+1461332092041	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1461332092041	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1461332092041	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1461332098678	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.1.14
+1461332099069	addons.manager	DEBUG	shutdown
+1461332099069	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1461332099070	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1461332099070	addons.xpi	DEBUG	shutdown
+1461332099070	addons.xpi-utils	DEBUG	shutdown
+1461332099071	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1461332099071	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1461332099072	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1461332099073	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1461332099076	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1461332099080	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 22:18:01'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_77'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+de.com":{"d":"C:\\Users\\OIGNAT~1\\AppData\\Local\\Temp\\anonymous2407978303352559212webdriver-profile\\extensions\\fxdriver@googlecode.com","e":false,"v":"2.25.0","st":1461332089045,"mt":1461332088757}},"app-system-defaults":{"loop@mozilla.org":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\loop@mozilla.org.xpi","e":true,"v":"1.1.14","st":1460086236000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","e":true,"v":"45.0.2","st":1460086235000}}}
+1461332091626	addons.xpi	DEBUG	No changes found
+1461332091631	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1461332091632	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1461332091644	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1461332091656	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\OIGNAT~1\AppData\Local\Temp\anonymous2407978303352559212webdriver-profile\extensions.json
+1461332091663	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1461332091663	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1461332091663	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1461332091676	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1461332091676	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1461332091676	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1461332091676	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1461332091676	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1461332091677	addons.manager	DEBUG	Starting provider: GMPProvider
+1461332091681	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1461332091681	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1461332091682	addons.manager	DEBUG	Starting provider: PluginProvider
+1461332091682	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1461332091682	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1461332091682	addons.manager	DEBUG	Completed startup sequence
+1461332091856	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1461332091856	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1461332091857	addons.xpi-utils	DEBUG	Successfully read XPI database
+*** Blocklist::_handleCertItemNode: Error adding revoked cert by Issuer and Serial[Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsICertBlocklist.revokeCertByIssuerAndSerial]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/components/nsBlocklistService.js :: Blocklist.prototype._handleCertItemNode :: line 958"  data: no]
+1461332092041	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1461332092041	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1461332092041	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1461332098678	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.1.14
+1461332099069	addons.manager	DEBUG	shutdown
+1461332099069	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1461332099070	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1461332099070	addons.xpi	DEBUG	shutdown
+1461332099070	addons.xpi-utils	DEBUG	shutdown
+1461332099071	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1461332099071	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1461332099072	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1461332099073	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1461332099076	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1461332099080	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 22:18:01'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_77'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:121)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:109)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:183)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:178)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:174)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:92)
+	at com.dataart.selenium.framework.Settings.getDriver(Settings.java:91)
+	at com.dataart.selenium.framework.Settings.getDriver(Settings.java:85)
+	at com.dataart.selenium.framework.BaseTest.beforeSuite(BaseTest.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+de.com":{"d":"C:\\Users\\OIGNAT~1\\AppData\\Local\\Temp\\anonymous2407978303352559212webdriver-profile\\extensions\\fxdriver@googlecode.com","e":false,"v":"2.25.0","st":1461332089045,"mt":1461332088757}},"app-system-defaults":{"loop@mozilla.org":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\features\\loop@mozilla.org.xpi","e":true,"v":"1.1.14","st":1460086236000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","e":true,"v":"45.0.2","st":1460086235000}}}
+1461332091626	addons.xpi	DEBUG	No changes found
+1461332091631	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1461332091632	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1461332091644	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1461332091656	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\OIGNAT~1\AppData\Local\Temp\anonymous2407978303352559212webdriver-profile\extensions.json
+1461332091663	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1461332091663	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1461332091663	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1461332091676	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1461332091676	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1461332091676	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1461332091676	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1461332091676	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1461332091677	addons.manager	DEBUG	Starting provider: GMPProvider
+1461332091681	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1461332091681	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1461332091682	addons.manager	DEBUG	Starting provider: PluginProvider
+1461332091682	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1461332091682	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1461332091682	addons.manager	DEBUG	Completed startup sequence
+1461332091856	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1461332091856	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1461332091857	addons.xpi-utils	DEBUG	Successfully read XPI database
+*** Blocklist::_handleCertItemNode: Error adding revoked cert by Issuer and Serial[Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsICertBlocklist.revokeCertByIssuerAndSerial]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/components/nsBlocklistService.js :: Blocklist.prototype._handleCertItemNode :: line 958"  data: no]
+1461332092041	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1461332092041	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1461332092041	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1461332098678	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.1.14
+1461332099069	addons.manager	DEBUG	shutdown
+1461332099069	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1461332099070	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1461332099070	addons.xpi	DEBUG	shutdown
+1461332099070	addons.xpi-utils	DEBUG	shutdown
+1461332099071	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1461332099071	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1461332099072	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1461332099073	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1461332099076	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1461332099080	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:109)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="SKIP" signature="openLoginPage()[pri:0, instance:com.dataart.selenium.tests.LoginTest@4501b7af]" name="openLoginPage" is-config="true" duration-ms="0" started-at="2016-04-22T16:35:36Z" finished-at="2016-04-22T16:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method status="SKIP" signature="correctLoginTest()[pri:0, instance:com.dataart.selenium.tests.LoginTest@4501b7af]" name="correctLoginTest" duration-ms="1" started-at="2016-04-22T16:35:36Z" finished-at="2016-04-22T16:35:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- correctLoginTest -->
+        <test-method status="FAIL" signature="afterClass()[pri:0, instance:com.dataart.selenium.tests.LoginTest@4501b7af]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-04-22T16:35:36Z" finished-at="2016-04-22T16:35:36Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.dataart.selenium.framework.BaseTest.afterClass(BaseTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:308)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.dataart.selenium.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

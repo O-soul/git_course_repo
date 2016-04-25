@@ -22,33 +22,39 @@ public class LoginTest extends BaseTest {
 
     @BeforeMethod(alwaysRun = true)
     public void openLoginPage() {
-        basicPage = initPage(BasicPage.class);
-        loginPage = basicPage.forceLogout();
-        headerPage = initPage(HeaderPage.class);
-        user = admin();
+        basicPage = initPage(BasicPage.class); // finding BasicPage's elements and BasicPage init
+        loginPage = basicPage.forceLogout(); // load LoginPage before each method
+        headerPage = initPage(HeaderPage.class); // finding elements and HeaderPage init
+        user = admin(); // I set my firstname and lastname here
     }
 
     @Test
     public void correctLoginTest() {
         loginPage.loginAs(user);  
         assertHeader(user);
+       
+        System.out.println("Oleg, correctLoginTest is finished!");
     }
 
     @Test
     public void incorrectLoginTest() {
         user.setPassword(user.getPassword() + user.getPassword()); // incorrect password
-        loginPage.loginAs(user);                                   // correct user
-        assertThat(isElementPresent(basicPage.flash)).isTrue();
+        loginPage.loginAs(user);                                   // entering incorrect password and correct username to inputs
+        assertThat(isElementPresent(BasicPage.flash)).isTrue();
         assertThat(basicPage.getFlashMessage()).isEqualTo("You have entered an invalid username or password!");
+        
+        System.out.println("Oleg, incorrectLoginTest is finished!");
     }
 
     @Test
     public void incorrectThenCorrectTest() {
-        user.setPassword(user.getPassword() + user.getPassword());
-        loginPage.loginAs(user);
-        user.setPassword(admin().getPassword());
-        loginPage.loginAs(user);
+        user.setPassword(user.getPassword() + user.getPassword()); // incorrect password
+        loginPage.loginAs(user);                                   // entering incorrect password and correct username to inputs
+        user.setPassword(admin().getPassword());                   // correct password
+        loginPage.loginAs(user);                                   // entering correct password and correct username to inputs
         assertHeader(user);
+        
+        System.out.println("Oleg, incorrectThenCorrectTest is finished!");
     }
 
     private void assertHeader(User user){
