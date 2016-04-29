@@ -4,7 +4,6 @@ import com.dataart.selenium.framework.BaseTest;
 import com.dataart.selenium.models.User;
 import com.dataart.selenium.pages.BasicPage;
 import com.dataart.selenium.pages.HeaderPage;
-import com.dataart.selenium.pages.LoginPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,25 +14,21 @@ import static com.dataart.selenium.framework.BasePage.initPage;
 
 public class LoginTest extends BaseTest {
 
-    private LoginPage loginPage;
-    private BasicPage basicPage;
     private HeaderPage headerPage;
     private User user;
 
     @BeforeMethod(alwaysRun = true)
-    public void openLoginPage() {
-        basicPage = initPage(BasicPage.class); // finding BasicPage's elements and BasicPage init
-        loginPage = basicPage.forceLogout(); // load LoginPage before each method
+    public void openLoginPage() {  
+    	basicPage.forceLogout(); // load LoginPage
         headerPage = initPage(HeaderPage.class); // finding elements and HeaderPage init
-        user = admin(); // I set my firstname and lastname here
+        user = admin(); // I set my fname and lname here
     }
 
     @Test
     public void correctLoginTest() {
         loginPage.loginAs(user);  
-        assertHeader(user);
-       
-        System.out.println("Oleg, correctLoginTest is finished!");
+        assertHeader(user);      
+        successMessage("correctLoginTest");   
     }
 
     @Test
@@ -41,10 +36,9 @@ public class LoginTest extends BaseTest {
         user.setPassword(user.getPassword() + user.getPassword()); // incorrect password
         loginPage.loginAs(user);                                   // entering incorrect password and correct username to inputs
         assertThat(isElementPresent(BasicPage.flash)).isTrue();
-        assertThat(basicPage.getFlashMessage()).isEqualTo("You have entered an invalid username or password!");
-        
-        System.out.println("Oleg, incorrectLoginTest is finished!");
-    }
+        assertThat(basicPage.getFlashMessage()).isEqualTo("You have entered an invalid username or password!");      
+        successMessage("incorrectLoginTest");   
+        }
 
     @Test
     public void incorrectThenCorrectTest() {
@@ -52,9 +46,8 @@ public class LoginTest extends BaseTest {
         loginPage.loginAs(user);                                   // entering incorrect password and correct username to inputs
         user.setPassword(admin().getPassword());                   // correct password
         loginPage.loginAs(user);                                   // entering correct password and correct username to inputs
-        assertHeader(user);
-        
-        System.out.println("Oleg, incorrectThenCorrectTest is finished!");
+        assertHeader(user);      
+        successMessage("incorrectThenCorrectTest");   
     }
 
     private void assertHeader(User user){

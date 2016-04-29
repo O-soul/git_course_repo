@@ -6,17 +6,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.*;
 import java.util.Properties;
 
 public class Settings {
-
+	private static final String SELENIUM_ICONPATH = "selenium.icon";
+	private static final String SELENIUM_IMAGEPATH = "selenium.image";
     private static final String SELENIUM_BASEURL = "selenium.baseUrl";
+    private static final String SELENIUM_LOGINURL = "selenium.loginUrl";
     private static final String SELENIUM_BROWSER = "selenium.browser";
     private static final String SELENIUM_PROPERTIES = "selenium.properties";
 
     private String baseUrl;
+    private String loginUrl;
+    private String imagePath;
+    private String iconPath;
     private BrowserType browser;
     private Properties properties = new Properties();
 
@@ -24,9 +30,12 @@ public class Settings {
         loadSettings();
     }
 
-    private void loadSettings() {
+    public void loadSettings() {
         properties = loadPropertiesFile();
         baseUrl = getPropertyOrThrowException(SELENIUM_BASEURL);
+        loginUrl = getPropertyOrThrowException(SELENIUM_LOGINURL);
+        imagePath = getPropertyOrThrowException(SELENIUM_IMAGEPATH);
+        iconPath = getPropertyOrThrowException(SELENIUM_ICONPATH);
         browser = BrowserType.Browser(getPropertyOrThrowException(SELENIUM_BROWSER));
     }
 
@@ -56,7 +65,7 @@ public class Settings {
         return getProperty(name, false);
     }
 
-    public String getPropertyOrThrowException(String name) {
+    public String getPropertyOrThrowException(String name) { // we set a keys here
         return getProperty(name, true);
     }
 
@@ -91,7 +100,10 @@ public class Settings {
                 return new FirefoxDriver();
             case IE:
             	System.setProperty("webdriver.ie.driver","src/test/resources/IEDriverServer.exe");
-                return new InternetExplorerDriver();
+            	
+            	DesiredCapabilities d = DesiredCapabilities.internetExplorer();
+            	d.setCapability("nativeEvents", false);
+                return new InternetExplorerDriver(d);             
             case GC:
             	System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
                 return new ChromeDriver();
@@ -108,11 +120,20 @@ public class Settings {
         return baseUrl;
     }
     
-    public String getRegistrationUrl() { // my method
-        return "http://localhost:8080/register";
+    public String getLoginUrl() {
+        return loginUrl;
     }
+    
 
     public BrowserType getBrowser() {
         return browser;
+    }
+    
+    public String pathToImage(){			
+    	return System.getProperty("user.dir") + imagePath;
+    }
+    
+    public String pathToIcon(){		
+    	return System.getProperty("user.dir") + iconPath;
     }
 }

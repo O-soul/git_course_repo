@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.dataart.selenium.tests.RegistrationTest">
+      <class name="com.dataart.selenium.tests.ApplicationTest">
         <methods>
-          <include name="correctLoginTest"/>
+          <include name="openHomePage"/>
+          <include name="createNewApplicationAndDownloadItManyTimes"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.dataart.selenium.tests.RegistrationTest -->
+      </class> <!-- com.dataart.selenium.tests.ApplicationTest -->
     </classes>
-  </test> <!-- Default test -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
