@@ -43,10 +43,5 @@ public class BasicPage extends BasePage {
 		return driver.getCurrentUrl();
 	}
 
-	public void looginButtonExisting(){
-		try{
-			loginButton.click();}		
-			catch(Exception e){}
-		}
 
-	}
+}

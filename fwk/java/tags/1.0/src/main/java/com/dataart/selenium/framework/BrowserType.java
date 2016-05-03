@@ -5,7 +5,7 @@ import org.apache.commons.lang.StringUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-public enum BrowserType { // this class is used in BaseTest class(row 13) for to now if we have got correct browser
+public enum BrowserType { // this class is used in Select class to chose the browser
     FIREFOX,
     IE,
     GC,

@@ -69,7 +69,7 @@ public class Settings {
         return getProperty(name, true);
     }
 
-    private String getProperty(String name, boolean forceExceptionIfNotDefined) {
+    private String getProperty(String name, boolean forceExceptionIfNotDefined) { // we set a keys here
         String result;
         if ((result = System.getProperty(name, null)) != null) {
             return result; 
@@ -99,8 +99,7 @@ public class Settings {
             case FIREFOX:
                 return new FirefoxDriver();
             case IE:
-            	System.setProperty("webdriver.ie.driver","src/test/resources/IEDriverServer.exe");
-            	
+            	System.setProperty("webdriver.ie.driver","src/test/resources/IEDriverServer.exe");           	
             	DesiredCapabilities d = DesiredCapabilities.internetExplorer();
             	d.setCapability("nativeEvents", false);
                 return new InternetExplorerDriver(d);             
@@ -108,6 +107,7 @@ public class Settings {
             	System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
                 return new ChromeDriver();
             case OPERA:
+            	System.setProperty("webdriver.opera.driver","src/test/resources/operadriver.exe");
                 return new OperaDriver();
             case HTMLUNIT:
                 return new HtmlUnitDriver();

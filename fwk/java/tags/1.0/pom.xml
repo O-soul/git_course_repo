@@ -23,6 +23,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.5</version>
                 <configuration>
+              <!--   <suiteXmlFiles>
+                  <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles> --> 
                     <properties>
                         <property>
                             <name>usedefaultlisteners</name>
@@ -162,7 +165,7 @@
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-api</artifactId>
             <version>2.7.0</version>
-        </dependency>
+        </dependency>       
     </dependencies>
 
     <repositories>

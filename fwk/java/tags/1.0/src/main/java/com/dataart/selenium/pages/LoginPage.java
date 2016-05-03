@@ -14,13 +14,13 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = ULOGIN_BUTTON_XPATH)
     WebElement loginButton;
 
-    public HomePage loginAs(User user) {
+    public ApplicationPage loginAs(User user) {
         userNameTextField.clear();
         passwordTextField.clear();
         userNameTextField.sendKeys(user.getUsername());
         passwordTextField.sendKeys(user.getPassword());
         loginButton.click();
-        return initPage(HomePage.class);
+        return initPage(ApplicationPage.class);
     }
 
     public static final String USER_NAME_TEXT_FIELD_XPATH = "//input[@id='j_username']";

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.dataart.selenium.tests.ApplicationTest">
+      <class name="com.dataart.selenium.tests.JSTest">
         <methods>
-          <include name="openHomePage"/>
-          <include name="createNewApplicationAndDownloadItManyTimes"/>
+          <include name="openAjaxPage"/>
+          <include name="WhooHooooCorrect"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.dataart.selenium.tests.ApplicationTest -->
+      </class> <!-- com.dataart.selenium.tests.JSTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
