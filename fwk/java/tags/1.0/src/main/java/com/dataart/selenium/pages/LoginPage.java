@@ -17,8 +17,8 @@ public class LoginPage extends BasePage {
     public ApplicationPage loginAs(User user) {
         userNameTextField.clear();
         passwordTextField.clear();
-        userNameTextField.sendKeys(user.getUsername());
-        passwordTextField.sendKeys(user.getPassword());
+        //userNameTextField.sendKeys(user.getUsername()); // закоменчено специально для фейла(listener)(раскоменть)
+        //passwordTextField.sendKeys(user.getPassword()); // закоменчено специально для фейла(listener)(раскоменть)
         loginButton.click();
         return initPage(ApplicationPage.class);
     }

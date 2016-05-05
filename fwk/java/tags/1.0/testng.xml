@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="My Suite">
+	<listeners>
+		<listener class-name="com.dataart.selenium.tests.TestListener" />
+	</listeners>
 	<test name="Application Test">
 		<classes>
-			<class name="com.dataart.selenium.tests.ApplicationTest"/> <!-- run ApplicationTest only -->
+			<class name="com.dataart.selenium.tests.LoginTest" /> <!-- run LoginTest only -->
 		</classes>
 	</test>
 </suite>
