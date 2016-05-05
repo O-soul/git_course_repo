@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1687" started-at="2016-05-04T14:49:02Z" finished-at="2016-05-04T14:49:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1687" started-at="2016-05-04T14:49:02Z" finished-at="2016-05-04T14:49:04Z">
+      <class name="com.dataart.selenium.tests.LoginTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.dataart.selenium.tests.LoginTest@7d9d1a19]" name="beforeSuite" is-config="true" duration-ms="6220" started-at="2016-05-04T17:48:56Z" finished-at="2016-05-04T17:49:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="openLoginPage()[pri:0, instance:com.dataart.selenium.tests.LoginTest@7d9d1a19]" name="openLoginPage" is-config="true" duration-ms="633" started-at="2016-05-04T17:49:02Z" finished-at="2016-05-04T17:49:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method status="PASS" signature="correctLoginTest()[pri:0, instance:com.dataart.selenium.tests.LoginTest@7d9d1a19]" name="correctLoginTest" duration-ms="1034" started-at="2016-05-04T17:49:03Z" finished-at="2016-05-04T17:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- correctLoginTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.dataart.selenium.tests.LoginTest@7d9d1a19]" name="afterClass" is-config="true" duration-ms="28" started-at="2016-05-04T17:49:04Z" finished-at="2016-05-04T17:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.dataart.selenium.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
